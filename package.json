@@ -29,6 +29,7 @@
   "dependencies": {
     "@types/jest": "^23.3.9",
     "aws-sdk": "^2.361.0",
+    "convict": "^4.4.0",
     "tslint": "^5.11.0"
   }
 }

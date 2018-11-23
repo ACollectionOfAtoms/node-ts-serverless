@@ -12,7 +12,7 @@ describe('setupLambdaRole.ts', () => {
   it('calls IAM.createRole', () => {
     setupLambdaRole();
     expect(IAM).toHaveBeenCalledTimes(1);
-    expect(IAM().createRole).toHaveBeenCalledTimes(2); // WAT
-    expect(loadFromPath).toHaveBeenCalledTimes(1);
+    expect(IAM().createRole).toHaveBeenCalledTimes(1);
+    expect(IAM().attachRolePolicy).toHaveBeenCalledTimes(1);
   });
 });

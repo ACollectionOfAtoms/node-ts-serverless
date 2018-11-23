@@ -7,6 +7,6 @@
 	"rules": {},
 	"rulesDirectory": [],
 	"linterOptions": {
-		"exclude": ["**/node_modules/**, **/__test__/**"]
+		"exclude": ["**/node_modules/**", "**/__test__/**", "settings.js"]
 	}
 }

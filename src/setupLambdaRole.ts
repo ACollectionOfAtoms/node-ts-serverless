@@ -1,5 +1,7 @@
-import { IAM, AWSError, Request } from 'aws-sdk';
+import AWS, { IAM, AWSError, Request } from 'aws-sdk';
 
+const creds = new AWS.SharedIniFileCredentials({profile: 'default'});
+AWS.config.credentials = creds;
 export default function createLambdaIAM(): Request<IAM.Types.CreateRoleResponse, AWSError> {
   const iam: IAM = new IAM({apiVersion: '2010-05-08'});
   const ROLE: IAM.policyNameType = "git-lambda";
@@ -41,3 +43,5 @@ export default function createLambdaIAM(): Request<IAM.Types.CreateRoleResponse,
 
   return iam.createRole(createParams, callback);
 }
+
+createLambdaIAM();
