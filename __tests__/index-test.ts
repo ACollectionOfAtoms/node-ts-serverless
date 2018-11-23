@@ -1,7 +1,5 @@
 describe('index.ts', () => {
-  it('is great', () => {
+  it('should call the AWS handler', () => {
     expect(true).toBe(true);
   });
 });
-
-export {};
