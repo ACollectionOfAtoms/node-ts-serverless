@@ -1,5 +1,6 @@
 import AWS from 'aws-sdk';
 import fs from 'fs';
+
 import config from './config';
 
 const creds = new AWS.SharedIniFileCredentials({profile: 'default'});
@@ -19,10 +20,10 @@ export default function createLambdaFunction() {
     Code: { /* required */
       ZipFile: zippedFunction,
     },
-    FunctionName: config.get('lambda.funcionName'), /* required */
+    FunctionName: config.get('lambda').functionName, /* required */
     Handler: config.get('lambda.handler'), /* required */
     // TODO: get Arn from setupLambdaRole output
-    Role: 'arn:aws:iam::772920315388:role/git-lambda', /* required */
+    Role: config.get('iam.arn'), /* required */
     Runtime: `nodejs${config.get('lambda.nodeRuntime')}`, /* required */
     Description: config.get('lambda.description'),
   };

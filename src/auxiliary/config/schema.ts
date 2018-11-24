@@ -6,6 +6,18 @@ export default {
         default: "lambda-function",
         format: String
       }
+    },
+    arn: {
+      doc: "The Amazon Resource Name used when creating your function",
+      default: "arn-not-yet-set",
+      format: String
+    }
+  },
+  zip: {
+    exclude: {
+      doc: "Files or folders that should not be zipped in a function",
+      default: ['__tests__', '__mocks__', 'README.md'],
+      format: Array
     }
   },
   lambda: {
@@ -28,13 +40,6 @@ export default {
       doc: 'node runtime version to use in the function',
       default: '8.10',
       format: String
-    }
-  },
-  zip: {
-    exclude: {
-      doc: "Files or folders that should not be zipped in a function",
-      default: ['__tests__', '__mocks__', 'README.md'],
-      format: Array
     }
   }
 }

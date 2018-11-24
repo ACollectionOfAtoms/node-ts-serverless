@@ -4,8 +4,9 @@ const config = convict(schema);
 config.load({
   iam: {
     role: {
-      name: 'git-lambda'
-    }
+      name: 'git-lambda',
+    },
+    arn: 'arn:aws:iam::772920315388:role/git-lambda',
   },
   lambda: {
     functionName: 'git_handler',

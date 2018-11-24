@@ -1,7 +1,6 @@
 # AWS Lamba + github boilerplate 
 
 ## TODO
-- [ ] Create config file using convict and stuff as much as you can in there (ensure VPC config is easy to edit)
 - [ ] think of and create a reasonable cli via npm commands
 - [ ] update usage (how-to in readme)
 - [ ] update for API gateway integration (separate branch?). API gateway per function.
@@ -11,6 +10,7 @@
 - [ ] dont send the whole node_modules. ensure build step involves a `npm i --only=prod`
 - [ ] npm command to test only function and not aux functions
 - [ ] move node version into env function and use it in babel.config as well as auxiliary config
+- [ ] add cool cli animations (duh)
 
 # Installation
 
