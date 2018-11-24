@@ -10,6 +10,7 @@
 - [ ] create branch for Github + Slack
 - [ ] dont send the whole node_modules. ensure build step involves a `npm i --only=prod`
 - [ ] npm command to test only function and not aux functions
+- [ ] move node version into env function and use it in babel.config as well as auxiliary config
 
 # Installation
 
