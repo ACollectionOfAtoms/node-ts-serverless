@@ -10,7 +10,12 @@ export const IAM = jest.fn().mockImplementation(() => {
   }
 });
 
+export const SharedIniFileCredentials = jest.fn().mockImplementation(()=> {
+  return {};
+})
+
 export default {
+  SharedIniFileCredentials,
   config: {
     loadFromPath,
   },

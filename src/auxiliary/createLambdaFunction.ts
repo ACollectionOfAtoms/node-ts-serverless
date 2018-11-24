@@ -30,4 +30,6 @@ export default function createLambdaFunction() {
     else     console.log(data);// successful response
   });
 }
-createLambdaFunction();
+if (!module.parent) { 
+  createLambdaFunction();
+}
