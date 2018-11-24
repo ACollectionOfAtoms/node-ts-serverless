@@ -3,5 +3,6 @@ module.exports = {
     "^.+\\.ts?$": "babel-jest"
   },
   moduleFileExtensions: ['js', 'json', 'ts'],
-  "testMatch": ["**/__tests__/*.+(ts|js)"]
+  "testMatch": ["**/__tests__/*.+(ts|js)"],
+  "testPathIgnorePatterns": ["/lib/"]
 }

@@ -9,6 +9,7 @@
 - [ ] create branch for Github
 - [ ] create branch for Github + Slack
 - [ ] dont send the whole node_modules. ensure build step involves a `npm i --only=prod`
+- [ ] npm command to test only function and not aux functions
 
 # Installation
 
