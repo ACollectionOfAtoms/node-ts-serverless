@@ -1,1 +1,1 @@
-# Typescript AWS Lambda Boilerplate
+# Serverless Typescript Boilerplate
